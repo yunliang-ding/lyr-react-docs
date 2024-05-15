@@ -1,5 +1,4 @@
 import { Spin } from '@arco-design/web-react';
-import React from 'react';
 
 export default () => {
   return (
