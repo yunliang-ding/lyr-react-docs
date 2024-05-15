@@ -1,32 +1,46 @@
 {
+  "compileOnSave": false,
+  "buildOnSave": false,
   "compilerOptions": {
-    "target": "esnext",
+    "baseUrl": ".",
+    "outDir": "build",
     "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
+    "target": "es6",
     "jsx": "react-jsx",
-    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "sourceMap": true,
-    "baseUrl": "./",
-    "strict": false,
+    "allowJs": true,
+    "rootDir": "./",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"],
-      "react": ["./node_modules/@types/react"]
-    },
-    "allowSyntheticDefaultImports": true
-    // "suppressImplicitAnyIndexErrors": true
+      "@/*": [
+        "./src/*"
+      ],
+      "lyr": [
+        "./src/.lyr"
+      ],
+      "react": [
+        "./node_modules/@types/react"
+      ]
+    }
   },
   "exclude": [
     "node_modules",
-    "lib",
-    "es",
-    "mock",
     "dist",
-    "typings",
-    "**/__test__",
-    "test",
-    "docs",
-    "tests"
+    "app",
   ]
 }
