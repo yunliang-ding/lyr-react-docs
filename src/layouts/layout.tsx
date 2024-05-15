@@ -5,14 +5,14 @@ import uiStore from '@/store/ui';
 import userStore from '@/store/user';
 import breadcrumbStore from '@/store/breadcrumb';
 import Footer from './footer';
-import { outLogin } from '@/services';
 import { useEffect, useRef } from 'react';
 import { Outlet } from 'react-router-dom';
 
 export default () => {
   const layoutRef: any = useRef({});
   const breadcrumb = breadcrumbStore.useSnapshot();
-  const { dark, title, compact, collapsed, primaryColor } = uiStore.useSnapshot();
+  const { dark, title, compact, collapsed, primaryColor } =
+    uiStore.useSnapshot();
   const { name, avatarUrl, menus } = userStore.useSnapshot();
   const setCollapsed = (v: boolean) => {
     uiStore.collapsed = v;
@@ -53,11 +53,31 @@ export default () => {
       }}
       rightContentProps={{
         userName: name,
+        extra: (
+          <p
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              position: 'absolute',
+              right: 220,
+              gap: 14,
+              top: 6,
+            }}
+          >
+            <a href="https://npmmirror.com/package/xx-xxx">
+              <img alt="npm" src="https://img.shields.io/npm/dt/lyr-cli" />
+            </a>
+            <a href="https://npmmirror.com/package/xx-xxx">
+              <img
+                alt="NPM downloads"
+                src="https://img.shields.io/npm/v/lyr-cli.svg"
+              />
+            </a>
+          </p>
+        ),
         droplist: (
           <Menu>
-            <Menu.Item key="logout" onClick={outLogin}>
-              切换用户
-            </Menu.Item>
+            <Menu.Item key="logout">切换用户</Menu.Item>
           </Menu>
         ),
         avatarUrl,

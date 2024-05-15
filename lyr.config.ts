@@ -1,7 +1,7 @@
 import { defineConfig } from "lyr";
 
 export default defineConfig({
-  title: "中后台项目模版",
+  title: "lyr-cli",
   favicon:
     "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/favicon.ico",
   link: [

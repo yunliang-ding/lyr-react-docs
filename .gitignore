@@ -11,6 +11,7 @@
 /docs-dist
 /www
 /srcold
+/.lyr
 # misc
 .DS_Store
 
