@@ -1,11 +1,10 @@
+import { IconNotification } from '@arco-design/web-react/icon';
 import Marquee from 'react-fast-marquee';
-import { Icon } from '@/util';
 
 export default () => {
   return (
     <>
-      <Icon
-        type="icon-shengyin"
+      <IconNotification 
         style={{ color: 'rgb(var(--primary-6))', fontSize: 20 }}
       />
       <div style={{ width: 'calc(100%)', fontWeight: 'bold' }}>

@@ -1,18 +1,13 @@
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 import { useEffect } from 'react';
 import Layout from './layout';
-import Loading from '@/components/loading';
-import Error from '@/components/error';
-import uiStore from '@/store/ui';
-import userStore from '@/store/user';
+import Loading from '../loading';
+import Error from '../error';
+import uiStore from '../store/ui';
 import { generate, getRgbStr } from '@arco-design/color';
 
 export default () => {
-  const { fetchUserInfo } = userStore.useSnapshot();
   const { dark, status } = uiStore.useSnapshot();
-  useEffect(() => {
-    fetchUserInfo(uiStore);
-  }, []);
   useEffect(() => {
     if (dark) {
       // 设置为暗黑主题

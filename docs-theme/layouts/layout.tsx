@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/restrict-plus-operands */
 import { AppLayout } from 'lyr-component';
 import { Menu } from '@arco-design/web-react';
-import uiStore from '@/store/ui';
-import userStore from '@/store/user';
-import breadcrumbStore from '@/store/breadcrumb';
+import uiStore from '../store/ui';
+import userStore from '../store/user';
+import breadcrumbStore from '../store/breadcrumb';
 import Footer from './footer';
 import { useEffect, useRef } from 'react';
 import { Outlet } from 'react-router-dom';
