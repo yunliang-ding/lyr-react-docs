@@ -41,6 +41,7 @@ body {
 }
 
 body {
+
   div,
   span,
   td,
@@ -101,12 +102,12 @@ body {
   }
 }
 
-#root > .arco-result-is-500 {
+#root>.arco-result-is-500 {
   position: relative;
   top: 100px;
 }
 
-#root > .arco-spin > .arco-spin-icon > .arco-icon-loading {
+#root>.arco-spin>.arco-spin-icon>.arco-icon-loading {
   font-size: 40px !important;
 }
 
@@ -116,6 +117,27 @@ body {
   }
 }
 
-.app-layout-right-body-footer{
+.app-layout-right-body-footer {
   height: 0;
+}
+
+.markdown-viewer {
+  background: var(--color-menu-light-bg);
+  padding: 20px 120px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.arco-page-header-content {
+  padding: 0 !important;
+}
+
+.arco-page-header-head-wrapper {
+  display: none;
+}
+
+.arco-page-header-content {
+  height: 100% !important;
 }

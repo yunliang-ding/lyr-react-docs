@@ -2,7 +2,7 @@ import ReactDom from 'react-dom';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './layouts/index';
 import ErrorBoundary from './error-boundary';
-import router from './router';
+import router from '@/.lyr/router';
 import ConfigProps from './type';
 import './global.less';
 
@@ -14,6 +14,7 @@ const App = () => {
       errorElement: <ErrorBoundary />,
       children: router.map((item) => ({
         ...item,
+        element: item.component,
         errorElement: <ErrorBoundary />,
       })),
     },

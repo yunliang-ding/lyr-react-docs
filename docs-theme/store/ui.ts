@@ -1,7 +1,7 @@
 import { create } from 'lyr-hooks';
 
 export default create({
-  title: '通用项目模版',
+  title: 'lyr-cli',
   primaryColor: '#165dff',
   compact: true,
   collapsed: false,

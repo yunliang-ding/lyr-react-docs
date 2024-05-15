@@ -2,7 +2,7 @@
 import { AppLayout } from 'lyr-component';
 import { Menu } from '@arco-design/web-react';
 import uiStore from '../store/ui';
-import userStore from '../store/user';
+import menus from '@/.lyr/menus';
 import breadcrumbStore from '../store/breadcrumb';
 import Footer from './footer';
 import { useEffect, useRef } from 'react';
@@ -13,7 +13,6 @@ export default () => {
   const breadcrumb = breadcrumbStore.useSnapshot();
   const { dark, title, compact, collapsed, primaryColor } =
     uiStore.useSnapshot();
-  const { name, avatarUrl, menus } = userStore.useSnapshot();
   const setCollapsed = (v: boolean) => {
     uiStore.collapsed = v;
   };
@@ -46,13 +45,12 @@ export default () => {
       title={title}
       dark={dark}
       menu={{
-        items: menus,
+        items: menus as any,
         onClick: ({ path }: any) => {
           location.hash = path;
         },
       }}
       rightContentProps={{
-        userName: name,
         extra: (
           <p
             style={{
@@ -80,13 +78,12 @@ export default () => {
             <Menu.Item key="logout">切换用户</Menu.Item>
           </Menu>
         ),
-        avatarUrl,
         themeColor: primaryColor,
         onThemeColorChange: (newColor) => {
           uiStore.primaryColor = newColor;
         },
         onDarkChange: (dark) => {
-          uiStore.dark = dark;
+          // uiStore.dark = dark;
         },
         onCompactChange: (compact) => {
           uiStore.compact = compact;

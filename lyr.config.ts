@@ -35,4 +35,5 @@ export default defineConfig({
     "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.js",
     "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js"
   ],
+  serverPath: "/apis",
 });
