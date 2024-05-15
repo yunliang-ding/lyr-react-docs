@@ -13,29 +13,21 @@
   "typings": "dist/index.d.ts",
   "keywords": [
     "react",
-    "monaco",
-    "code-editor"
+    "docs",
+    "lyr docs"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/yunliang-ding/lyr-react-docs"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "lyr-component": "^1.0.3",
-    "lyr-hooks": "0.0.3",
-    "lyr-extra": "0.0.1",
-    "react-router-dom": "6.20.0",
-    "@arco-design/web-react": "2.58.2",
-    "react-fast-marquee": "1.3.2",
-    "nprogress": "^0.2.0"
   },
   "resolutions": {
     "@types/react": "17.0.2"
   },
   "devDependencies": {
-    "lyr-docs": "0.0.1",
+    "raw-loader": "4.0.2",
+    "lyr-docs": "0.0.2",
     "typescript": "5.3.2",
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.2"

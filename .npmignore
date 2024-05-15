@@ -3,7 +3,6 @@
 /src
 /docs
 /mock
-/.dumi
 /.github
 /docs-dist
 /.editorconfig                                      
@@ -12,6 +11,5 @@
 /.fatherrc.ts                                       
 /.prettierignore                                    
 /.prettierrc     
-/.umirc.ts
 tsconfig.json
 typings.d.ts

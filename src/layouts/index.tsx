@@ -7,13 +7,6 @@ import uiStore from '@/store/ui';
 import userStore from '@/store/user';
 import { generate, getRgbStr } from '@arco-design/color';
 
-/** 支持 socket */
-export const socket = window.io(location.origin);
-
-socket.on('opend', (data) => {
-  console.log(`%c 建立 socket ${data}`, 'color:green;');
-});
-
 export default () => {
   const { fetchUserInfo } = userStore.useSnapshot();
   const { dark, status } = uiStore.useSnapshot();
