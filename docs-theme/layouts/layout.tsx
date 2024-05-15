@@ -78,6 +78,7 @@ export default () => {
             <Menu.Item key="logout">切换用户</Menu.Item>
           </Menu>
         ),
+        avatarUrl: "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/favicon.ico",
         themeColor: primaryColor,
         onThemeColorChange: (newColor) => {
           uiStore.primaryColor = newColor;
