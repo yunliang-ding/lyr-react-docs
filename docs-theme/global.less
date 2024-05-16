@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-
+  font-family: monospace;
   div {
     box-sizing: border-box;
   }
@@ -124,7 +124,9 @@ body {
 .markdown-viewer {
   background: var(--color-menu-light-bg);
   padding: 20px 120px;
-
+  &-code{
+    margin: 0 !important;
+  }
   img {
     width: 100%;
   }
@@ -140,4 +142,8 @@ body {
 
 .arco-page-header-content {
   height: 100% !important;
+}
+
+.arco-page-header-content{
+  background-color: var(--color-menu-light-bg) !important;
 }
