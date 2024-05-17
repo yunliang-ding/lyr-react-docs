@@ -5,8 +5,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "lyr-docs dev",
-    "build": "lyr-docs build",
-    "build:docs": "lyr-docs build:docs"
+    "build": "rollup -c",
+    "docs:build": "lyr-docs build"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -20,13 +20,16 @@
     "type": "git",
     "url": "https://github.com/yunliang-ding/lyr-react-docs"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "resolutions": {
     "@types/react": "17.0.2"
   },
+  "peerDependencies": {
+    "react": "17.0.2"
+  },
   "devDependencies": {
-    "lyr-docs": "0.0.10",
+    "react": "17.0.2",
+    "lyr-docs": "0.0.12",
     "typescript": "5.3.2",
     "@types/react": "17.0.2",
     "@types/react-dom": "17.0.2"
