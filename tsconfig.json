@@ -1,46 +1,21 @@
 {
-  "compileOnSave": false,
-  "buildOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "outDir": "build",
-    "module": "esnext",
-    "target": "es6",
-    "jsx": "react-jsx",
+    "lib": ["es6", "dom"],
+    "target": "es2016",
+    "module": "CommonJS",
+    "esModuleInterop": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es6",
-      "dom"
-    ],
-    "sourceMap": true,
-    "allowJs": true,
-    "rootDir": "./",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "noImplicitAny": false,
-    "importHelpers": true,
-    "strictNullChecks": true,
-    "strict": true,
-    "noUnusedLocals": true,
+    "jsx": "react-jsx",
+    "strict": false,
+    "sourceMap": false,
     "skipLibCheck": true,
-    "resolveJsonModule": true,
+    "outDir": "./dist",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "lyr": [
-        "./src/.lyr"
-      ],
-      "react": [
-        "./node_modules/@types/react"
-      ]
+      "@/*": ["./src/*"],
+      "lyr": ["./src/.lyr"],
+      "react": ["./node_modules/@types/react"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "app",
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
