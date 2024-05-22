@@ -38,6 +38,21 @@ export default defineConfig({
       },
     }),
     terser(),
-    typescript({ tsconfig: './tsconfig.json' }),
+    typescript({
+      compilerOptions: {
+        target: "esnext",
+        module: "esnext",
+        esModuleInterop: true,
+        moduleResolution: "node",
+        declaration: true,
+        jsx: "react-jsx",
+        strict: false,
+        sourceMap: false,
+        skipLibCheck: true,
+        outDir: "./dist",
+      },
+      include: ["src/**/*"],
+      exclude: ["node_modules/**/*"],
+    }),
   ],
 });
