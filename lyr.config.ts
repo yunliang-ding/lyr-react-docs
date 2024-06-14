@@ -22,6 +22,8 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   buildScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/react.production.min.js',
@@ -39,6 +41,8 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
   ],
   serverPath: '/apis',
   menus: [
@@ -51,12 +55,8 @@ export default defineConfig({
       path: '/components',
       children: [
         {
-          label: 'User',
-          path: '/components/user',
-        },
-        {
-          label: 'GoodBod',
-          path: '/components/good-bod',
+          label: 'MyButton',
+          path: '/components/my-button',
         },
       ],
     },

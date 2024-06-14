@@ -1,6 +1,6 @@
-import { ReactElement } from 'react';
+import { MyBtnProps } from './type';
 import './index.less';
 
-export default ({ children }: { children: ReactElement }) => {
-  return <button className="my-btn">{children}</button>;
+export default (props: MyBtnProps) => {
+  return <button className="my-btn">{props.label}</button>;
 };
