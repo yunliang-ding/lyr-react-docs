@@ -12,10 +12,10 @@ export default () => {
           top: 3,
         }}
       >
-        <a href={`https://npmmirror.com/package/@yl-d/docs`} target="_blank">
+        <a href={`https://www.npmjs.com/package/@yl-d/docs`} target="_blank">
           <img alt="npm" src={`https://img.shields.io/npm/dt/@yl-d/docs`} />
         </a>
-        <a href={`https://npmmirror.com/package/@yl-d/docs`} target="_blank">
+        <a href={`https://www.npmjs.com/package/@yl-d/docs`} target="_blank">
           <img
             alt="NPM downloads"
             src={`https://img.shields.io/npm/v/@yl-d/docs.svg`}
