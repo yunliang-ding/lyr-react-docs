@@ -1,12 +1,12 @@
 import { defineConfig } from 'lyr';
 
 export default defineConfig({
-  title: 'my-component',
+  title: 'react-temp-docs',
   favicon: 'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/assets/favicon.ico',
   link: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.css',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.css',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/monaco-file-icon.css',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/components.min.css',
   ],
   devScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
@@ -20,13 +20,10 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/jsx-runtime.polyfill.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco-icon.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/aliyun-oss-sdk.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js",
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/components.min.js',
+    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/code-editor.min.js",
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/extra.min.js',
   ],
   buildScript: [
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/shiki.min.js',
@@ -40,14 +37,11 @@ export default defineConfig({
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/jsx-runtime.polyfill.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/arco-icon.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/aliyun-oss-sdk.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-component.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/track.min.js',
     'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/babel-standalone.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-standalone.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/prettier-parser-typescript.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-code-editor.min.js',
-    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/lyr-extra.min.js',
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/components.min.js',
+    "https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/code-editor.min.js",
+    'https://lyr-cli-oss.oss-cn-beijing.aliyuncs.com/cdn/@yl-d/extra.min.js',
   ],
   serverPath: '/apis',
   menus: [

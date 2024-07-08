@@ -1,7 +1,7 @@
 ## 基本使用
 
 ```tsx | react
-import { MyButton } from 'my-component';
+import { MyButton } from 'react-temp-docs';
 
 export default () => {
   return <MyButton label="测试按钮" />;
